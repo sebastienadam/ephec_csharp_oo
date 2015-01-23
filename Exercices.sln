@@ -88,6 +88,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "039_radio_check", "039_radi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "040_square_close_gui", "040_square_close_gui\040_square_close_gui.csproj", "{3AA53188-51DB-4B82-A9F9-1F1609D2F1CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "041_radio_check_wpf", "041_radio_check_wpf\041_radio_check_wpf.csproj", "{0DF6AC0C-2879-488A-B7CB-436847607A10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -266,6 +268,10 @@ Global
 		{3AA53188-51DB-4B82-A9F9-1F1609D2F1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AA53188-51DB-4B82-A9F9-1F1609D2F1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AA53188-51DB-4B82-A9F9-1F1609D2F1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF6AC0C-2879-488A-B7CB-436847607A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF6AC0C-2879-488A-B7CB-436847607A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF6AC0C-2879-488A-B7CB-436847607A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF6AC0C-2879-488A-B7CB-436847607A10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
