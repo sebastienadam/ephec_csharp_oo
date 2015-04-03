@@ -63,12 +63,14 @@ namespace _020_Personne {
       if (Partner == null) {
         throw new InvalidOperationException("Une personne célibataire ne peut pas divorcer!");
       } else {
-        if (!_inDivorceProceedings) {
-          _inDivorceProceedings = true;
-          Partner.Divorce();
-          Partner = null;
-          _inDivorceProceedings = false;
-        }
+        //if (!_inDivorceProceedings) {
+        //  _inDivorceProceedings = true;
+        //  Partner.Divorce();
+        //  Partner = null;
+        //  _inDivorceProceedings = false;
+        //}
+        Partner.Partner = null;
+        Partner = null;
       }
     }
 
