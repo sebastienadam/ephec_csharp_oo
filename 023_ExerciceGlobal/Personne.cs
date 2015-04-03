@@ -10,7 +10,7 @@ namespace _023_ExerciceGlobal {
     private string _prenom;
     private CompteBancaire _compteBancaire;
     private Voiture _voiture;
-    private bool _venteEnCours = false;
+    //private bool _venteEnCours = false;
     private CarteFideliteTaxecool _carteFidTaxecool;
 
     public string Nom { get { return _nom; } protected set { _nom = value; } }
@@ -28,7 +28,6 @@ namespace _023_ExerciceGlobal {
     }
 
     public void AcheterVoiture(Personne Vendeur) {
-      Voiture _voiture;
       if (Vendeur == null) {
         throw new ArgumentNullException("Vendeur");
       } else if (Voiture != null) {
@@ -42,14 +41,10 @@ namespace _023_ExerciceGlobal {
       } else if (CompteEnBanque.Solde < Vendeur.Voiture.Prix) {
         throw new InvalidOperationException("Vous n'avez pas assez d'argent sur votre compte pour acheter la voiture!");
       } else {
-        if (!_venteEnCours) {
-          _venteEnCours = true;
-          _voiture = Vendeur.Voiture;
-          Vendeur.VendreVoiture(this);
-          Voiture = _voiture;
-          CompteEnBanque.Retirer(Voiture.Prix);
-          _venteEnCours = false;
-        }
+        this.Voiture = Vendeur.Voiture;
+        Vendeur.Voiture = null;
+        this.CompteEnBanque.Retirer(Voiture.Prix);
+        Vendeur.CompteEnBanque.Verser(Voiture.Prix);
       }
     }
 
@@ -87,13 +82,10 @@ namespace _023_ExerciceGlobal {
       } else if (Acheteur.CompteEnBanque.Solde < Voiture.Prix) {
         throw new InvalidOperationException("L'acheteur n'a pas assez d'argent pour acheter votre voiture!");
       } else {
-        if (!_venteEnCours) {
-          _venteEnCours = true;
-          Acheteur.AcheterVoiture(this);
-          CompteEnBanque.Verser(Voiture.Prix);
-          Voiture = null;
-          _venteEnCours = false;
-        }
+        Acheteur.Voiture = this.Voiture;
+        Acheteur.CompteEnBanque.Retirer(Voiture.Prix);
+        this.CompteEnBanque.Verser(Voiture.Prix);
+        this.Voiture = null;
       }
     }
     /// <summary>
