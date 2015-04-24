@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Common {
-  public class NumericTools {
+  public static class NumericTools {
     /// <summary>
     /// Indique si un nombre est premier ou non.
     /// </summary>

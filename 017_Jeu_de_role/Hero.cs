@@ -37,11 +37,12 @@ namespace _017_Jeu_de_role {
     /// </summary>
     /// <param name="Opponent">Le héros attaqué</param>
     public virtual void Attack(Hero Opponent) {
-      if (Opponent == null) {
+      if(Opponent == null) {
         throw new ArgumentNullException("Opponent");
+      } else {
+        Dice.Throw();
+        Opponent.Damage(Dice.Value);
       }
-      Dice.Throw();
-      Opponent.Damage(Dice.Value);
     }
 
     /// <summary>
@@ -51,7 +52,7 @@ namespace _017_Jeu_de_role {
     /// <returns>Le nombre de points de vie restant</returns>
     public int Damage(int value) {
       LifePoints -= Math.Abs(value);
-      if (LifePoints < 0) {
+      if(LifePoints < 0) {
         LifePoints = 0;
       }
       return LifePoints;
@@ -62,16 +63,16 @@ namespace _017_Jeu_de_role {
     /// </summary>
     /// <param name="Opponent">L'opposant avec qui le duel sera effectué</param>
     public void Duel(Hero Opponent) {
-      if (Opponent == null) {
+      if(Opponent == null) {
         throw new ArgumentNullException("Opponent");
       }
-      while (true) {
+      while(true) {
         Attack(Opponent);
-        if (Opponent.IsDead) {
+        if(Opponent.IsDead) {
           break;
         }
         Opponent.Attack(this);
-        if (IsDead) {
+        if(IsDead) {
           break;
         }
       }
@@ -82,7 +83,7 @@ namespace _017_Jeu_de_role {
     /// </summary>
     /// <returns>La repésentation de l'objet sous forme de chaine de caractères</returns>
     public override string ToString() {
-      if (IsDead) {
+      if(IsDead) {
         return String.Format("#{0}# - Mort!", Name);
       } else {
         return String.Format("{0} - {1}PV", Name, LifePoints);

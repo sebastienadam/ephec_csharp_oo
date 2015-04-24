@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Common {
-  public class StringTools {
+  public static class StringTools {
     /// <summary>
     /// Génère une chaine de caractères qui répète un caractère donné
     /// </summary>

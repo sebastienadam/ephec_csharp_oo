@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Common {
-  public class KeyboardTools {
+  public static class KeyboardTools {
     private static void ShowErrorMessage(Exception e) {
       Console.WriteLine(e.Message);
       Console.WriteLine();

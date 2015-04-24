@@ -1,5 +1,5 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
+# Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_Figure", "001_Figure\001_Figure.csproj", "{7E4CEB93-7EC6-4931-809F-E0201D56E43D}"
@@ -89,6 +89,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "040_square_close_gui", "040_square_close_gui\040_square_close_gui.csproj", "{3AA53188-51DB-4B82-A9F9-1F1609D2F1CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "041_radio_check_wpf", "041_radio_check_wpf\041_radio_check_wpf.csproj", "{0DF6AC0C-2879-488A-B7CB-436847607A10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuDeCartes", "JeuDeCarteS\JeuDeCartes.csproj", "{5D3DDC5B-7B82-4D5E-B129-61CA57CAA793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuDeCartesTest", "JeuDeCartesTest\JeuDeCartesTest.csproj", "{8F04ED51-F839-46C4-9CBD-0ECBE6B4C037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuBataille", "JeuBataille\JeuBataille.csproj", "{B7D984AC-CEC5-4C28-849F-5D0471F43AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "042_JeuBataille", "042_JeuBataille\042_JeuBataille.csproj", "{03D9BB08-F9D4-437E-BC0A-A8FF72984E81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -272,6 +280,22 @@ Global
 		{0DF6AC0C-2879-488A-B7CB-436847607A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DF6AC0C-2879-488A-B7CB-436847607A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DF6AC0C-2879-488A-B7CB-436847607A10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D3DDC5B-7B82-4D5E-B129-61CA57CAA793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3DDC5B-7B82-4D5E-B129-61CA57CAA793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3DDC5B-7B82-4D5E-B129-61CA57CAA793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3DDC5B-7B82-4D5E-B129-61CA57CAA793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F04ED51-F839-46C4-9CBD-0ECBE6B4C037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F04ED51-F839-46C4-9CBD-0ECBE6B4C037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F04ED51-F839-46C4-9CBD-0ECBE6B4C037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F04ED51-F839-46C4-9CBD-0ECBE6B4C037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D984AC-CEC5-4C28-849F-5D0471F43AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D984AC-CEC5-4C28-849F-5D0471F43AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D984AC-CEC5-4C28-849F-5D0471F43AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D984AC-CEC5-4C28-849F-5D0471F43AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03D9BB08-F9D4-437E-BC0A-A8FF72984E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D9BB08-F9D4-437E-BC0A-A8FF72984E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D9BB08-F9D4-437E-BC0A-A8FF72984E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D9BB08-F9D4-437E-BC0A-A8FF72984E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

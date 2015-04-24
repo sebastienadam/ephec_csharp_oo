@@ -8,7 +8,7 @@ using _012_Dice;
 namespace _019_Jeu_de_role {
   class BonusDice : Dice {
     public int Throw(int Bonus) {
-      return rnd.Next(NbFaces + Bonus);
+      return rnd.Next(NbFaces + Bonus) +1 ;
     }
   }
 }

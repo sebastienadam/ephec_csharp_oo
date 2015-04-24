@@ -22,7 +22,7 @@ namespace Common {
     /// </summary>
     /// <returns>Une chaine de caractères représentant la personne</returns>
     public override string ToString() {
-      return String.Format("{0} {1}",Prenom,Nom);
+      return String.Format("{0} {1}", Prenom, Nom);
     }
   }
 }

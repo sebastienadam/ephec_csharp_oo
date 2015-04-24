@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Common {
-  public class ConsoleTools {
+  public static class ConsoleTools {
     /// <summary>
     /// Affiche un message d'attente sur la console et attend que l'utilisateur ait pressé une touche
     /// </summary>
